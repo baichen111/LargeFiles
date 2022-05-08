@@ -1,4 +1,4 @@
-# LargeFiles
+# LargeFiles on Linux
 
-g++ main.cpp mmap_file.cpp -o mmap_test
+g++ file_op.cpp mmap_file_op.cpp mmap_file.cpp mmap_file_op_test.cpp -o mmap_file_op_test
 
