@@ -13,12 +13,14 @@
 #include <sys/mman.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <inttypes.h>
 
 namespace baichen
 {
     namespace largefile
     {
         const int32_t TFS_SUCCESS = 0;
+        const int32_t TFS_ERROR = -1;
         const int32_t EXIT_DISK_OPER_INCOMPLETE = -8012; // read or write length is less than required
     }
 }

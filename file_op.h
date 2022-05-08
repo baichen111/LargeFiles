@@ -19,8 +19,8 @@ namespace baichen
             int flush_file(); // flush data to disk
             int unlink_file();
 
-            int pread_file(char *buf, const int32_t nbytes, const int64_t offset);
-            int pwrite_file(char *buf, const int32_t nbytes, const int64_t offset);
+            virtual int pread_file(char *buf, const int32_t nbytes, const int64_t offset);
+            virtual int pwrite_file(char *buf, const int32_t nbytes, const int64_t offset);
             int write_file(char *buf, const int32_t nbytes); // seek
 
             int64_t get_file_size();
